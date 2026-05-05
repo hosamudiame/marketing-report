@@ -1,0 +1,93 @@
+@import "tailwindcss";
+
+:root {
+  --bg: #fafafa;
+  --bg-soft: #efefe9;
+  --card: #ffffff;
+  --ink: #0d0d0d;
+  --ink-2: #2a2a2a;
+  --muted: #8a8a85;
+  --muted-2: #b8b8b2;
+  --line: #e7e7e1;
+  --line-2: #ececea;
+  --accent: #6c5cf7;
+  --accent-soft: #ede9fe;
+  --mint: #d8f0d8;
+  --mint-ink: #2f7a3a;
+  --chip: #f1f1ed;
+  --btn-primary: #111111;
+  --btn-primary-text: #ffffff;
+  --card-border: transparent;
+  --tab-pill: #ffffff;
+  --tooltip-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+html.dark {
+  --bg:             #0c0c0c;
+  --bg-soft:        #131313;
+  --card:           #171717;
+  --chip:           #242424;
+  --line:           #2a2a2a;
+  --line-2:         #1e1e1e;
+  --ink:            #eeeeee;
+  --ink-2:          #c4c4c4;
+  --muted:          #6a6a6a;
+  --muted-2:        #4a4a4a;
+  --mint:           #172917;
+  --mint-ink:       #4ade80;
+  --accent:         #8b7cf8;
+  --accent-soft:    #2a1f6e;
+  --card-border:    transparent;
+  --tab-pill:       #2e2e2e;
+  --btn-primary:      #fff;
+  --btn-primary-text: #0c0c0c;
+  --tooltip-shadow: 0 4px 20px rgba(0,0,0,0.55), 0 1px 4px rgba(0,0,0,0.4);
+}
+
+@theme inline {
+  --color-background: var(--bg);
+  --color-foreground: var(--ink);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+body {
+  background: var(--bg);
+  color: var(--ink);
+  font-family: var(--font-geist-sans), -apple-system, BlinkMacSystemFont, sans-serif;
+  font-size: 14px;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Recharts overrides */
+.recharts-wrapper {
+  font-family: var(--font-geist-mono), ui-monospace, monospace !important;
+}
+
+.recharts-tooltip-wrapper {
+  outline: none !important;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 4px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--line);
+  border-radius: 2px;
+}

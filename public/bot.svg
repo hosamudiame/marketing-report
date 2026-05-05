@@ -1,0 +1,97 @@
+<svg width="166" height="162" viewBox="0 0 166 162" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Yellow chat bot icon</title>
+  <desc id="desc">A rounded yellow bot head with two white vertical eyes.</desc>
+  <defs>
+    <linearGradient id="bodyFill" x1="85" y1="35" x2="85" y2="123" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#FFE84A"/>
+      <stop offset="0.22" stop-color="#FFD61B"/>
+      <stop offset="0.68" stop-color="#FDC80B"/>
+      <stop offset="1" stop-color="#FFC200"/>
+    </linearGradient>
+    <radialGradient id="topGlow" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(83 50) rotate(90) scale(38 44)">
+      <stop offset="0" stop-color="#FFF7C5" stop-opacity="0.95"/>
+      <stop offset="0.42" stop-color="#FFF7C5" stop-opacity="0.48"/>
+      <stop offset="1" stop-color="#FFF7C5" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="rimStroke" x1="83" y1="34" x2="83" y2="124" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#FFD10D"/>
+      <stop offset="0.62" stop-color="#F9BB00"/>
+      <stop offset="1" stop-color="#EDAA00"/>
+    </linearGradient>
+    <linearGradient id="edgeLight" x1="61" y1="38" x2="112" y2="120" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#FFF4A6" stop-opacity="0.95"/>
+      <stop offset="0.5" stop-color="#FFF4A6" stop-opacity="0.16"/>
+      <stop offset="1" stop-color="#FFF4A6" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="softShadow" x="35" y="30" width="101" height="100" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feDropShadow dx="0" dy="1" stdDeviation="0.6" flood-color="#C98800" flood-opacity="0.25"/>
+    </filter>
+  </defs>
+
+  <path d="M 113.00 44.00
+      C 109.46 41.31, 102.25 37.42, 98.00 36.00
+      C 93.75 34.58, 86.68 34.00, 83.00 34.00
+      C 79.32 34.00, 74.83 35.15, 72.00 36.00
+      C 69.17 36.85, 66.26 37.73, 63.00 40.00
+      C 59.74 42.27, 51.83 48.88, 49.00 52.00
+      C 46.17 55.12, 44.27 58.74, 43.00 62.00
+      C 41.73 65.26, 40.42 68.20, 40.00 75.00
+      C 39.58 81.80, 39.72 104.19, 40.00 110.00
+      C 40.28 115.81, 41.01 114.44, 42.00 116.00
+      C 42.99 117.56, 44.45 120.01, 47.00 121.00
+      C 49.55 121.99, 53.20 122.86, 60.00 123.00
+      C 66.80 123.14, 88.06 122.99, 95.00 122.00
+      C 101.94 121.01, 105.60 118.12, 109.00 116.00
+      C 112.40 113.88, 116.45 110.26, 119.00 107.00
+      C 121.55 103.74, 125.58 96.12, 127.00 93.00
+      C 128.42 89.88, 128.72 88.12, 129.00 85.00
+      C 129.28 81.88, 129.85 75.25, 129.00 71.00
+      C 128.15 66.75, 125.27 58.83, 123.00 55.00
+      C 120.73 51.17, 116.54 46.69, 113.00 44.00
+      Z" fill="url(#bodyFill)" stroke="url(#rimStroke)" stroke-width="1.5" stroke-linejoin="round" filter="url(#softShadow)"/>
+  <path d="M 113.00 44.00
+      C 109.46 41.31, 102.25 37.42, 98.00 36.00
+      C 93.75 34.58, 86.68 34.00, 83.00 34.00
+      C 79.32 34.00, 74.83 35.15, 72.00 36.00
+      C 69.17 36.85, 66.26 37.73, 63.00 40.00
+      C 59.74 42.27, 51.83 48.88, 49.00 52.00
+      C 46.17 55.12, 44.27 58.74, 43.00 62.00
+      C 41.73 65.26, 40.42 68.20, 40.00 75.00
+      C 39.58 81.80, 39.72 104.19, 40.00 110.00
+      C 40.28 115.81, 41.01 114.44, 42.00 116.00
+      C 42.99 117.56, 44.45 120.01, 47.00 121.00
+      C 49.55 121.99, 53.20 122.86, 60.00 123.00
+      C 66.80 123.14, 88.06 122.99, 95.00 122.00
+      C 101.94 121.01, 105.60 118.12, 109.00 116.00
+      C 112.40 113.88, 116.45 110.26, 119.00 107.00
+      C 121.55 103.74, 125.58 96.12, 127.00 93.00
+      C 128.42 89.88, 128.72 88.12, 129.00 85.00
+      C 129.28 81.88, 129.85 75.25, 129.00 71.00
+      C 128.15 66.75, 125.27 58.83, 123.00 55.00
+      C 120.73 51.17, 116.54 46.69, 113.00 44.00
+      Z" fill="url(#topGlow)"/>
+  <path d="M 113.00 44.00
+      C 109.46 41.31, 102.25 37.42, 98.00 36.00
+      C 93.75 34.58, 86.68 34.00, 83.00 34.00
+      C 79.32 34.00, 74.83 35.15, 72.00 36.00
+      C 69.17 36.85, 66.26 37.73, 63.00 40.00
+      C 59.74 42.27, 51.83 48.88, 49.00 52.00
+      C 46.17 55.12, 44.27 58.74, 43.00 62.00
+      C 41.73 65.26, 40.42 68.20, 40.00 75.00
+      C 39.58 81.80, 39.72 104.19, 40.00 110.00
+      C 40.28 115.81, 41.01 114.44, 42.00 116.00
+      C 42.99 117.56, 44.45 120.01, 47.00 121.00
+      C 49.55 121.99, 53.20 122.86, 60.00 123.00
+      C 66.80 123.14, 88.06 122.99, 95.00 122.00
+      C 101.94 121.01, 105.60 118.12, 109.00 116.00
+      C 112.40 113.88, 116.45 110.26, 119.00 107.00
+      C 121.55 103.74, 125.58 96.12, 127.00 93.00
+      C 128.42 89.88, 128.72 88.12, 129.00 85.00
+      C 129.28 81.88, 129.85 75.25, 129.00 71.00
+      C 128.15 66.75, 125.27 58.83, 123.00 55.00
+      C 120.73 51.17, 116.54 46.69, 113.00 44.00
+      Z" fill="none" stroke="url(#edgeLight)" stroke-width="1" stroke-linejoin="round" opacity="0.8"/>
+
+  <rect x="74.6" y="64.6" width="11.4" height="20.9" rx="5.7" fill="white"/>
+  <rect x="99.5" y="64.6" width="11.7" height="20.9" rx="5.85" fill="white"/>
+</svg>
