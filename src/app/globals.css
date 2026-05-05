@@ -55,6 +55,28 @@ html.dark {
   box-sizing: border-box;
 }
 
+/* Desktop-only gate */
+@media (max-width: 1024px) {
+  body::after {
+    content: "This dashboard is designed for desktop.\A Please open it on a larger screen.";
+    white-space: pre;
+    position: fixed;
+    inset: 0;
+    z-index: 99999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: ui-monospace, monospace;
+    font-size: 13px;
+    line-height: 2;
+    color: #6a6a6a;
+    letter-spacing: 0.02em;
+    background: #0c0c0c;
+    text-align: center;
+    padding: 32px;
+  }
+}
+
 html,
 body {
   margin: 0;
