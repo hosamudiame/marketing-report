@@ -81,6 +81,7 @@ export default function Sidebar() {
         {navItems.map((item, i) => {
           const active = pathname === item.href;
           const isAUM = item.label === "AUM";
+          const enabled = item.href === "/dashboard/general-summary";
           const color = active ? "var(--accent)" : "var(--muted-2)";
           return (
             <motion.li
@@ -90,7 +91,8 @@ export default function Sidebar() {
               transition={{ duration: 0.45, delay: 0.05 + i * 0.04, ease }}
             >
               <Link
-                href={item.href}
+                href={enabled ? item.href : "#"}
+                onClick={enabled ? undefined : (e) => e.preventDefault()}
                 style={{
                   display: "flex",
                   alignItems: "center",
@@ -101,6 +103,8 @@ export default function Sidebar() {
                   color: active ? "var(--accent)" : "var(--ink-2)",
                   textDecoration: "none",
                   transition: "color 0.12s",
+                  cursor: enabled ? "pointer" : "default",
+                  opacity: enabled ? 1 : 0.35,
                 }}
                 onMouseEnter={(e) => {
                   if (!active) (e.currentTarget as HTMLElement).style.color = "#9b8ff9";

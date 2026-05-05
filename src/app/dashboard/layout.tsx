@@ -5,11 +5,12 @@ import Topbar from "@/components/Topbar";
 import Sidebar from "@/components/Sidebar";
 import ChatDock from "@/components/ChatDock";
 
-const SIDEBAR_W = 240;
-const LEFT_MAX  = 230;   // left gutter at 1440px
-const DESIGN_W  = 1440;
-const SCALE     = 0.75;
-const LEFT_MIN  = 24;    // sidebar never closer than this to the left edge
+const SIDEBAR_W  = 240;
+const LEFT_MAX   = 230;   // left gutter at 1440px
+const DESIGN_W   = 1440;
+const SCALE      = 0.75;
+const LEFT_MIN   = 24;    // sidebar never closer than this to the left edge
+const BALANCE_W  = DESIGN_W - 2 * LEFT_MAX; // = 980 — distributes shrinkage to both sides equally
 
 export default function DashboardLayout({ children }: { children: React.ReactNode }) {
   const [vw, setVw] = useState(DESIGN_W);
@@ -21,11 +22,15 @@ export default function DashboardLayout({ children }: { children: React.ReactNod
     return () => window.removeEventListener("resize", update);
   }, []);
 
-  // Left margin shrinks linearly as viewport narrows, never below LEFT_MIN
-  const sidebarLeft   = Math.max(LEFT_MIN, LEFT_MAX - (DESIGN_W - vw));
-  const spacer        = sidebarLeft + SIDEBAR_W;
-  // Logical width so that (contentLogical * SCALE) fills exactly (vw - spacer) px
-  const contentLogical = Math.round((vw - spacer) / SCALE);
+  // Cap at design width — container is maxWidth 1440 so viewports wider than that
+  // don't affect the layout.
+  const effectiveVw = Math.min(vw, DESIGN_W);
+  // Distribute shrinkage equally between left margin and right card space so both
+  // sides tighten together. At 1440px → 230px (design value). Min clamped to LEFT_MIN.
+  const sidebarLeft = Math.max(LEFT_MIN, Math.round((effectiveVw - BALANCE_W) / 2));
+  const spacer      = sidebarLeft + SIDEBAR_W;
+  // Logical width so that (contentLogical × SCALE) fills exactly the remaining space
+  const contentLogical = Math.round((effectiveVw - spacer) / SCALE);
 
   return (
     <>
